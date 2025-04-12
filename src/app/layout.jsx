@@ -2,6 +2,7 @@ import "../components/ui/globals.css"
 
 //analytics
 import { AnalyticsWrapper } from "../components/analytics/Analytics"
+
 //fonts
 import localFont from "next/font/local"
 

@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react"
 
 //components
-import Switcher from "./switcher"
 import Links from "./links"
 import Bar from "./bar"
 
@@ -28,11 +27,11 @@ export default function Header() {
       <nav className={`max-w-screen-2xl m-auto`}>
         <div className={`p-4 md:px-6 lg:px-8 md:pt-6 md:pb-2`}>
           <div className={`flex justify-between items-center`}>
-            <Switcher />
             <div className="hidden md:block">
               <Bar />
             </div>
-            <Links isHeader={true} />
+            {/* <div>rssh</div> */}
+            {/* <Links /> */}
           </div>
           <div className="block pt-8 md:hidden max-w-fit">
             <Bar />

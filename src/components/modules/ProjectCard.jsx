@@ -10,16 +10,17 @@ export default function ProjectCard({ project }) {
         <div className="flex items-center justify-between">
           <div className="font-sans text-xl">{project.name}</div>
           <div className="flex items-center gap-4">
+            {project.live && 
             <a href={`${project.live}`} target="_blank">
               <HiOutlineExternalLink />
-            </a>
+            </a>} 
             <a href={`${project.github}`} target="_blank">
               <AiFillGithub />
             </a>
           </div>
         </div>
         <div className="text-sm">{project.desc}</div>
-        <div className="text-mainGray/70 text-sm ">Tools: {project.tools.join(", ")}</div>
+        <div className="text-mainGray/70 text-sm ">Technologies: {project.tools.join(", ")}</div>
       </div>
     </div>
   )

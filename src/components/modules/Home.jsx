@@ -5,31 +5,32 @@ import personalLogo from "./../../../public/assets/images/logo.svg"
 import Polygon from "../../../public/assets/images/polygon"
 import Rect from "../../../public/assets/images/rect"
 import { useEffect } from "react"
+import Link from "next/link"
+import Tools from "./Tools"
+
 
 export default function Home() {
   return (
     <main className="relative pb-8 md:flex items-start -mx-px">
-      <div className={`flex font-sans md:w-11/12 lg:w-5/6 z-10 relative translate-x-2 lg:translate-x-4 dark:translate-x-0 duration-150 ease-linear`}>
-        <div className={`flex flex-col text-3xl md:text-4xl lg:text-5xl gap-16 z-10`}>
-          <h1 className={`leading-snug`}>Hello, i&apos;m Redouan. Front-end developer and UI designer.</h1>
-          <h1 className={`leading-snug font-medium`}>
-            I help Independents and founders to <span>Ideate. Prototype. Build. </span>User-friendly experience so they ship it Faster.
-          </h1>
+      <div className="font-mono flex ">
+        <div className="flex flex-col gap-8 justify-between">
+          <div className="flex flex-col gap-8">
+            <div className="flex flex-col gap-8">
+              <p>
+                Greetings! I&apos;m Redouan, cs student{" "}
+                <a href="https://www.42network.org/" target="_blank" className="text-mainGray underline underline-offset-3">
+                  @42TheNetwork
+                </a>{" "}
+              </p>
+              <p>Adaptable software engineering graduate with a solid background in low-level programming, graphics and web development. Learned how systems work from the ground up through hands-on academic projects that mixed theory with real practice. Quick to adapt, eager to learn, and comfortable in fast-moving environments.</p>
+            </div>
+            <div className="flex flex-col md:flex-row gap-10">
+              <Tools />
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div className={`dark:hidden md:hidden`}>
-        <div className={`w-5/6 absolute top-0 left-0`}>
-          <Rect />
-        </div>
-        <div className={`w-5/6 absolute right-0 bottom-0`}>
-          <Polygon />
-        </div>
-      </div>
-
-      <div className="hidden dark:hidden md:block md:absolute">
-        <Image className={`w-screen`} src={personalLogo} alt="Personal Logo" />
       </div>
     </main>
   )
 }
+
