@@ -22,7 +22,7 @@ export default function Home() {
                   @42TheNetwork
                 </a>{" "}
               </p>
-              <p>Adaptable software engineering graduate with a solid background in low-level programming, graphics and web development. Learned how systems work from the ground up through hands-on academic projects that mixed theory with real practice. Quick to adapt, eager to learn, and comfortable in fast-moving environments.</p>
+              <p>Versatile software engineering graduate with a solid background in low-level programming, graphics and web development. Learned how systems work from the ground up through hands-on academic projects that mixed theory with real practice. Quick to adapt, eager to learn, and comfortable in fast-moving environments.</p>
             </div>
             <div className="flex flex-col md:flex-row gap-10">
               <Tools />
